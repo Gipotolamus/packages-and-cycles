@@ -2,7 +2,7 @@ package ru.netology.services;
 
 public class FreelanceService {
 
-    public int calculate(int income, int expenses, int threshold) {
+    public int calculate(int income, int expenses, int threshold, int expected) {
         int count = 0;
         int money = 0;
         for (int i = 0; i < 12; i++) {

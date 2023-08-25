@@ -6,7 +6,11 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 class FreelanceServiceTest {
     @ParameterizedTest
-    @CsvFileSource(files = "srs/test/resources/money.csv")
+//    @CsvSource({
+//            "10000,3000,20000,3",
+//            "100000,60000,150000,2"
+//    })  // работает
+    @CsvFileSource(files="src\\test\\resources\\money.csv") 
 
     public void testCalculate1(int income, int expenses, int threshold, int expected) {
         FreelanceService service = new FreelanceService();

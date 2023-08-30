@@ -10,7 +10,7 @@ class FreelanceServiceTest {
 //            "10000,3000,20000,3",
 //            "100000,60000,150000,2"
 //    })  // работает
-    @CsvFileSource(files = "src\\test\\resources\\money.csv")
+    @CsvFileSource(files = "src/test/resources/money.csv")
 
     public void testCalculate1(int income, int expenses, int threshold, int expected) {
         FreelanceService service = new FreelanceService();
